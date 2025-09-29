@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+    int threshold = 80, critical_temp = 100, temp;
+    printf("Enter your sensor temp: ", temp);
+    scanf("%d", &temp);
+    if(temp<= threshold)
+    {
+        printf("status: Normal");
+    }
+    else if (temp> threshold && temp<= critical_temp)
+    {
+        printf("status: Warning");
+    }
+    else
+    {
+        printf("status: Critical");
+    }
+}
